@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-md navbar-info fixed-top bg-info">
+  <div class="container">
+      <div class="form mb-2 mt-2">
+      <fieldset>
+          <form action="/weather" method="post">
+              <div class="input-group">
+              <input class="form-control" name="city" placeholder="Enter a city name" required type="text">
+              <input type="submit" value="Search" class="btn btn-outline-light">
+              </div>
+          </form>
+      </fieldset>
+  </div>
+  <div class="mb-2 mt-2">
+    <h2 style="color:white">What is the weather like?</h2>
+  </div>
+</nav>
+
+{{#if weather}}
+<div style="padding-top:200px">
+  <div class="card mb-3" style="max-width: 360px;margin: 0 auto;float: none; margin-bottom: 10px;">
+    <div class="row no-gutters" style="margin-left:20px">
+      <div class="col-md-2" style="margin-top:20px">
+        <img src="http://openweathermap.org/img/w/{{weather.icon}}.png" class="card-img" alt="image">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h4 class="card-title">{{weather.city}}</h4>
+          <h5 class="card-subtitle mb-2 text-muted">{{weather.temperature}}°F</h5>
+          <p class="card-text text-muted">{{weather.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/if}}
