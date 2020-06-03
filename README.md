@@ -25,7 +25,7 @@ $ npm install
 Run the server file
 
 ```
-$ node
+$ nodemon
 ```
 
 Run the [app](https://localhost:3000)
