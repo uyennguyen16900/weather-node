@@ -1,7 +1,7 @@
 # Weather App
 > This app is allowed users to get the current weather for a city specified.
 
-![Gif description](../public/weather-gif.gif)
+![Gif description](./public/weather-gif.gif)
 
 ## Installation
 Clone the repository
